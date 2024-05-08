@@ -1,6 +1,6 @@
 alert(" Este programa te pedira numeros y te regresara la suma de todos ellos.");
 
-function sumarElementos(arreglo) {
+function sumarElementos() {
   let arregloNumeros = [];
   let cantidadNumeros = parseInt(prompt("cuantos numeros deseas capturar?"));
   for (var i = 0; i < cantidadNumeros; i++){
@@ -9,7 +9,7 @@ function sumarElementos(arreglo) {
   }
 
   var suma = 0;
-  for (var elemento of arreglo) {
+  for (var elemento of arregloNumeros) {
       suma += elemento;
   }
   return suma;
