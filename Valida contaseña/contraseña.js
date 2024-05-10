@@ -1,36 +1,41 @@
-// Función para verificar si la contraseña cumple con los requisitos
-function verificarContrasena(contrasena) {
-    // Verificar la longitud de la contraseña
-    if (contrasena.length < 8) {
+//Pedimos Al usuario ingresar una contraseña
+alert(
+    `Acontinuacion debera ingresar una contraseña que contenga al menos 8 caracteres, una letra MAYUSCULA,una miniscula y un numero.`
+);
+
+//Funcion para validar contraseña
+let validarContraseña = (contraseña) => {
+    //Validar que contenga minimo 8 carecteres
+    if (contraseña.length <= 8) {
         return false;
     }
-    
-    // Verificar si la contraseña contiene al menos una letra mayúscula, una minúscula y un número
-    var tieneMayuscula = false;
-    var tieneMinuscula = false;
-    var tieneNumero = false;
-    
-    for (var i = 0; i < contrasena.length; i++) {
-        var caracter = contrasena.charAt(i);
-        if (caracter >= 'A' && caracter <= 'Z') {
-            tieneMayuscula = true;
-        } else if (caracter >= 'a' && caracter <= 'z') {
-            tieneMinuscula = true;
+    let letraMayuscula = false;
+    let letraMinuscula = false;
+    let contieneNumero = false;
+    //Bucle para recorer numero de caracteres
+    for (let i = 0; i < contraseña.length; i++) {
+        let caracter = contraseña.charAt(i);
+
+        //Validar si contiene mayusculas
+        if (caracter >= "A" && caracter <= "Z") {
+            letraMayuscula = true;
+        } else if (caracter >= "a" && caracter <= "z") {
+            letraMinuscula = true;
         } else if (!isNaN(caracter)) {
-            tieneNumero = true;
+            contieneNumero = true;
         }
     }
-    
-    // Devolver true si cumple con todos los requisitos, de lo contrario devolver false
-    return tieneMayuscula && tieneMinuscula && tieneNumero;
-}
+    //verificacion qeu cumpla con todos los requisitos
+    return letraMayuscula && letraMinuscula && contieneNumero;
+};
+//Pedirle la contraseña al usuario
+let contraseña = prompt("Ingrese su contraseña");
 
-// Solicitar al usuario ingresar una contraseña
-var contrasenaUsuario = prompt("Ingrese su contraseña:");
-
-// Verificar si la contraseña cumple con los requisitos
-if (verificarContrasena(contrasenaUsuario)) {
-    alert("La contraseña cumple con los requisitos.");
+//Mostramos los resultados al usuario
+if (validarContraseña(contraseña)) {
+    alert("Lacontraseña cumple con todos los requisitos");
 } else {
-    alert("La contraseña no cumple con los requisitos.");
+    alert(
+        `La contraseña no cumple con todos los requisitos, favor de revisarla, Contraseña: ${contraseña}`
+    );
 }
