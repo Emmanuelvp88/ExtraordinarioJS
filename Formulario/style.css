@@ -8,20 +8,28 @@ header{
     border-radius: 10px;
 }
 #formulario{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+align-content: center;
 height: 35em;
 width: 100%;
 background-color: rgb(152, 236, 113);
 }
-.formulario{
+/* .formulario{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     /* align-content: center; */
     
     /* height: 30em; */
     /* font-weight: 100%; */
-    /* margin:auto; */
-}
-div{
-    /* margin: 0 auto; */
+    /* margin:auto;
+} */
+input{
+    width: 5em;
+    padding: 50px;
+    /* height: 90px; */
+    /* margin: 4px 2px ; */
 }
