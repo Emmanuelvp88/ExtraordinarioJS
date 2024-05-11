@@ -1,3 +1,27 @@
 *{
     box-sizing: border-box;
+    font-family: "Monserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    border-radius: 10px;
+}
+#formulario{
+height: 35em;
+width: 100%;
+background-color: rgb(152, 236, 113);
+}
+.formulario{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: center; */
+    
+    /* height: 30em; */
+    /* font-weight: 100%; */
+    /* margin:auto; */
+}
+div{
+    /* margin: 0 auto; */
 }
