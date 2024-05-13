@@ -1,3 +1,45 @@
 *{
     box-sizing: border-box;
+    font-family: "Monserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    border-radius: 10px;
+}
+#formulario{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+height: 35em;
+width: 100%;
+background-color: rgb(152, 236, 113);
+}
+
+input{
+    width: 300px;
+    width: 400px;
+    padding: 10px;
+    margin:10px;
+    border: none;
+    border-bottom: 3px;
+    /* background-color: transparent; */
+}
+input:focus{
+    outline: none;
+    background: linear-gradient(#00000000, #0000003d);
+}
+
+input:nth-child(3){
+    width: 100px;
+    background-color: red;
+}
+
+
+.container_inputs{
+    /* background-color: transparent; */
+    /* width: 400px; */
+   
 }
