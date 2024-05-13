@@ -17,19 +17,29 @@ height: 35em;
 width: 100%;
 background-color: rgb(152, 236, 113);
 }
-/* .formulario{
-    display:flex;
-    flex-direction: column;
-    align-items: center; */
-    /* align-content: center; */
-    
-    /* height: 30em; */
-    /* font-weight: 100%; */
-    /* margin:auto;
-} */
+
 input{
-    width: 5em;
-    padding: 50px;
-    /* height: 90px; */
-    /* margin: 4px 2px ; */
+    width: 300px;
+    width: 400px;
+    padding: 10px;
+    margin:10px;
+    border: none;
+    border-bottom: 3px;
+    /* background-color: transparent; */
+}
+input:focus{
+    outline: none;
+    background: linear-gradient(#00000000, #0000003d);
+}
+
+input:nth-child(3){
+    width: 100px;
+    background-color: red;
+}
+
+
+.container_inputs{
+    /* background-color: transparent; */
+    /* width: 400px; */
+   
 }
