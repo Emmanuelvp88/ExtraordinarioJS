@@ -4,23 +4,23 @@ function verificarContrasena(contrasena) {
     if (contrasena.length < 8) {
         return false;
     }
-    
+
     // Verificar si la contraseña contiene al menos una letra mayúscula, una minúscula y un número
     var tieneMayuscula = false;
     var tieneMinuscula = false;
     var tieneNumero = false;
-    
+
     for (var i = 0; i < contrasena.length; i++) {
         var caracter = contrasena.charAt(i);
-        if (caracter >= 'A' && caracter <= 'Z') {
+        if (caracter >= "A" && caracter <= "Z") {
             tieneMayuscula = true;
-        } else if (caracter >= 'a' && caracter <= 'z') {
+        } else if (caracter >= "a" && caracter <= "z") {
             tieneMinuscula = true;
         } else if (!isNaN(caracter)) {
             tieneNumero = true;
         }
     }
-    
+
     // Devolver true si cumple con todos los requisitos, de lo contrario devolver false
     return tieneMayuscula && tieneMinuscula && tieneNumero;
 }
