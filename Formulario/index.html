@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "main.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Formulario</title>
 </head>
+
 <body>
     <header>
         <h1>Validacion de inputs en Formulario</h1>
     </header>
-    <section id="formulario">
-        <form  id = "form" class="formulario">
-            <div class="container_inputs">
-                <input type="name"  id = "name" placeholder="Ingres tu nombre">
-            </div>
-            <div class="container_inputs">
-                <input type="email"  id="email" placeholder="Ingresa tu Email">
-            </div>
-            <div class="container_inputs">
-                <input type="password"  id = "password" placeholder="Ingresa tu Password">
-            </div>
-            <div class="container_inputs">
-                <button  type = "submit" id="submit"  placeholder="Ingresa tu mensaje aqui:">
-                </button>
-            </div>
+        <form action="/submit" method="post" id="form">
+            <div class="container">
+                <div class="container_inputs">
+                    <label for=""> Nombre</label>
+                    <input type="text" name="" id="name" >
+                </div>
+                <div class="container_inputs">
+                    <input type="email" name="" id="email" placeholder="Ingresa tu Email">
+                </div>
+                <div class="container_inputs">
+                    <input type="password" name="" id="password" placeholder="Ingresa tu Password">
+                </div>
 
+                <button type="submit">Enviar</button>
+
+                <p class = "warning"  id="warning"></p>
+
+            </div>
         </form>
-    </section>
-    
+    <script src="main.js"></script>
 </body>
+
 </html>

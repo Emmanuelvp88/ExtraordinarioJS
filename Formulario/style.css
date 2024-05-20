@@ -1,53 +1,65 @@
-*{
+* {
     box-sizing: border-box;
     font-family: "Monserrat", sans-serif;
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     border-radius: 10px;
 }
-#formulario{
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-align-content: center;
-height: 35em;
-width: 100%;
-background-color: rgb(152, 236, 113);
+body{
+    /* background: linear-gradient(#f69d3c, #3f87a6); */
 }
 
-input{
+#formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 35em;
+    width: 100%;
+    background: linear-gradient(to left,  #5f0808, #00003d);
+    
+}
+
+input {
     width: 300px;
     width: 400px;
     padding: 10px;
-    margin:10px;
+    margin: 10px;
     border: none;
     border-bottom: 3px solid black;
     background-color: transparent;
 }
-input:focus{
+
+input:focus {
     outline: none;
-    background: linear-gradient(#00000000, #0000003d);
+    background: linear-gradient( #ce1c1c00, #0000003d);
 }
 
-.enviar{
+.submit {
     width: 100px;
+    height: 30px;
     background-color: greenyellow;
+    margin-left: 10px;
 }
-.enviar:hover{
+
+.submit:hover {
     text-transform: uppercase;
     transform: translateY(-2px);
 }
-.enviar:active{
-   transform: translateZ(2px);
+
+.submit:active {
+    transform: translateZ(2px);
 }
 
-
-
-.container_inputs{
-    /* background-color: transparent; */
-    /* width: 400px; */
-   
+#warning{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color:#5f0808;
+    padding-top: 20px;
+    
 }
