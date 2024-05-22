@@ -54,12 +54,11 @@ input:focus {
 .submit:active {
     transform: translateZ(2px);
 }
-
-#warning{
+.warning{
     width: 200px;
     text-align: center;
-    margin: auto;
+    margin: auto; 
     color:#5f0808;
     padding-top: 20px;
     
-}
+} 

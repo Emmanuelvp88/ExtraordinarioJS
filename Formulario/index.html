@@ -12,26 +12,26 @@
     <header>
         <h1>Validacion de inputs en Formulario</h1>
     </header>
-        <form action="/submit" method="post" id="form">
-            <div class="container">
-                <div class="container_inputs">
-                    <label for=""> Nombre</label>
-                    <input type="text" name="" id="name" >
-                </div>
-                <div class="container_inputs">
-                    <input type="email" name="" id="email" placeholder="Ingresa tu Email">
-                </div>
-                <div class="container_inputs">
-                    <input type="password" name="" id="password" placeholder="Ingresa tu Password">
-                </div>
-
-                <button type="submit">Enviar</button>
-
-                <p class = "warning"  id="warning"></p>
-
+    <form action="" method="POST" id="form">
+        <div class="form">
+            <h1>Registro</h1>
+            <div class="grupo">
+                <input type="text" name="" id="name" ><span class="barra"></span>
+                <label for="">Nombre</label>
             </div>
-        </form>
+            <div class="grupo">
+                <input type="email" name="" id="email" ><span class="barra"></span>
+                <label for="">Email</label>
+            </div>
+            <div class="grupo">
+                <input type="password" name="" id="password" ><span class="barra"></span>
+                <label for="">Password</label>
+            </div>
+            
+            <button type="submit">Suscribirte</button>
+            <p class="warnings" id="warnings"></p>
+        </div>
+    </form>
     <script src="main.js"></script>
 </body>
-
 </html>
