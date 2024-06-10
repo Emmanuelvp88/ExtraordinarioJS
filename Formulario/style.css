@@ -5,7 +5,8 @@
     padding: 0;
 }
 header{
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    align-items: center;
 }
 #formulario{
 display: flex;
@@ -24,15 +25,15 @@ input{
     padding: 10px;
     margin:10px;
     border: none;
-    border-bottom: 3px;
-    /* background-color: transparent; */
+    background-color: transparent;
+    border-bottom: 3px solid green;
 }
 input:focus{
     outline: none;
     background: linear-gradient(#00000000, #0000003d);
 }
 
-input:nth-child(3){
+input {
     width: 100px;
     background-color: red;
 }
