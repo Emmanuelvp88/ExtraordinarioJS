@@ -1,9 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     font-family: "Monserrat", sans-serif;
     margin: 0;
     padding: 0;
 }
+<<<<<<< HEAD
 header{
     /* border-radius: 10px; */
     align-items: center;
@@ -17,30 +18,80 @@ align-content: center;
 height: 35em;
 width: 100%;
 background-color: rgb(152, 236, 113);
+=======
+
+body{
+    background: linear-gradient(to left, #ec810e, #119ad4);
+>>>>>>> 39bc79e66a0e64b99b7f54196fdd7c32245fb41c
 }
 
-input{
-    width: 300px;
-    width: 400px;
-    padding: 10px;
-    margin:10px;
-    border: none;
-    background-color: transparent;
-    border-bottom: 3px solid green;
+
+#form {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /* flex-direction: column; */
+    justify-content: center;
+    justify-items: center;
+    /* flex-direction: row; */
+    align-content: center;
+    height: 35em;
+    width: 100%;
+    
 }
-input:focus{
-    outline: none;
-    background: linear-gradient(#00000000, #0000003d);
+.form{
+    width: 20em;
+    height: 20em;
+    background-color: white;
+    border-radius: 7px;
+
+
 }
 
 input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+<<<<<<< HEAD
+    background-color: transparent;
+    border-bottom: 3px solid green;
+=======
+    border-bottom: 3px solid black;
+    background-color: transparent;
+>>>>>>> 39bc79e66a0e64b99b7f54196fdd7c32245fb41c
+}
+
+input:focus {
+    outline: none;
+    background: linear-gradient( #ce1c1c00, #0000003d);
+}
+
+<<<<<<< HEAD
+input {
+=======
+.submit {
+>>>>>>> 39bc79e66a0e64b99b7f54196fdd7c32245fb41c
     width: 100px;
-    background-color: red;
+    height: 30px;
+    background-color:transparent;
+    margin-left: 10px;
 }
 
-
-.container_inputs{
-    /* background-color: transparent; */
-    /* width: 400px; */
-   
+.submit:hover {
+    text-transform: uppercase;
+    transform: translateY(-2px);
 }
+
+.submit:active {
+    transform: translateZ(2px);
+}
+.warnings{
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    margin: auto; 
+    color:#5f0808;
+    padding-top: 20px;
+    
+} 
