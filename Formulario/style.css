@@ -4,27 +4,22 @@
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-header{
-    /* border-radius: 10px; */
+
+header {
+    /* border-radius: 10px;/ */
     align-items: center;
 }
-#formulario{
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-align-content: center;
-height: 35em;
-width: 100%;
-background-color: rgb(152, 236, 113);
-=======
 
-body{
-    background: linear-gradient(to left, #ec810e, #119ad4);
->>>>>>> 39bc79e66a0e64b99b7f54196fdd7c32245fb41c
+#formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 35em;
+    width: 100%;
+    background-color: rgb(152, 236, 113);
 }
-
 
 #form {
     display: flex;
@@ -37,15 +32,13 @@ body{
     align-content: center;
     height: 35em;
     width: 100%;
-    
 }
-.form{
+
+.form {
     width: 20em;
     height: 20em;
     background-color: white;
     border-radius: 7px;
-
-
 }
 
 input {
@@ -53,28 +46,19 @@ input {
     padding: 10px;
     margin: 10px;
     border: none;
-<<<<<<< HEAD
     background-color: transparent;
     border-bottom: 3px solid green;
-=======
-    border-bottom: 3px solid black;
-    background-color: transparent;
->>>>>>> 39bc79e66a0e64b99b7f54196fdd7c32245fb41c
 }
 
 input:focus {
     outline: none;
-    background: linear-gradient( #ce1c1c00, #0000003d);
+    background: linear-gradient(#ce1c1c00, #0000003d);
 }
 
-<<<<<<< HEAD
 input {
-=======
-.submit {
->>>>>>> 39bc79e66a0e64b99b7f54196fdd7c32245fb41c
     width: 100px;
     height: 30px;
-    background-color:transparent;
+    background-color: transparent;
     margin-left: 10px;
 }
 
@@ -86,12 +70,12 @@ input {
 .submit:active {
     transform: translateZ(2px);
 }
-.warnings{
+
+.warnings {
     font-weight: bold;
     width: 200px;
     text-align: center;
-    margin: auto; 
-    color:#5f0808;
+    margin: auto;
+    color: #5f0808;
     padding-top: 20px;
-    
-} 
+}
